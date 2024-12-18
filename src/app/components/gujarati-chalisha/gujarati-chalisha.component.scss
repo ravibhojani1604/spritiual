@@ -1,0 +1,71 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Main container */
+.container {
+    width: 85%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section styling */
+.content h2 {
+    text-align: center;
+    font-size: 1.8em;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+}
+
+/* Paragraphs within sections */
+.dohas p, .dhyana p, .gospadika p, .manojavam p, .chaupai p, .dohas-footer p {
+    text-align: right;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-left: 3px solid #00aaff;
+    background-color: #f0f8ff;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Footer styling */
+.dohas-footer {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #333;
+    background-color: #e9f7ff;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .content h2 {
+        font-size: 1.6em;
+    }
+
+    .dohas p, .dhyana p, .gospadika p, .manojavam p, .chaupai p, .dohas-footer p {
+        font-size: 1.4rem;
+    }
+}
