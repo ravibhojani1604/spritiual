@@ -3,17 +3,21 @@ import { RouterOutlet } from '@angular/router';
 import { SliderComponent } from './components/slider/slider.component';
 import { ThemeService } from './theme.service';
 import { CommonModule } from '@angular/common';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,SliderComponent,CommonModule],
+  imports: [RouterOutlet,SliderComponent,CommonModule,FontAwesomeModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'spritiaul';
   isDarkMode: boolean = false;
+  faSun = faSun;
+  faMoon = faMoon;
   constructor(private themeService: ThemeService) {}
 
   ngOnInit(): void {
