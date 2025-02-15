@@ -2,3 +2,35 @@
 html {
     font-size: 62.5%; /* 1rem = 10px */
   }
+
+/* Light Theme */
+body.light-theme {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Dark Theme */
+body.dark-theme {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+body.light-theme .sidebar {
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Light shadow for light theme */
+}
+
+/* Dark Theme */
+body.dark-theme .sidebar {
+  box-shadow: 2px 0 5px rgba(255, 255, 255, 0.2); /* Lighter shadow for dark theme */
+}
+
+/* Global text color for components inside router-outlet */
+router-outlet {
+  color: inherit; /* Inherit text color from the body */
+}
+
+/* Button and other common element styles */
+button {
+  background-color: inherit;
+  color: inherit;
+}
