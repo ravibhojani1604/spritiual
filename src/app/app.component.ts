@@ -3,15 +3,16 @@ import { RouterOutlet } from '@angular/router';
 import { SliderComponent } from './components/slider/slider.component';
 import { ThemeService } from './theme.service';
 import { CommonModule } from '@angular/common';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,SliderComponent,CommonModule,FontAwesomeModule],
+  imports: [RouterOutlet,SliderComponent,CommonModule],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
+  providers:[FontAwesomeModule]
 })
 export class AppComponent {
   title = 'spritiaul';

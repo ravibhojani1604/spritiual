@@ -9,7 +9,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
   standalone: true,
   imports: [CommonModule,RouterModule,FontAwesomeModule],
   templateUrl: './slider.component.html',
-  styleUrl: './slider.component.scss'
+  styleUrl: './slider.component.scss',
 })
 export class SliderComponent {
   isSliderOpen: boolean = false;
