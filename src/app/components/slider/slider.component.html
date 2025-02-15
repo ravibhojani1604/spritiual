@@ -1,0 +1,19 @@
+<div class="wrapper">
+    <!-- The hamburger menu button (fixed on top) -->
+    <button class="open-btn" (click)="toggleSlider()">
+      <i class="fas fa-bars"></i> <!-- Font Awesome Hamburger Icon -->
+    </button>
+    
+  
+    <!-- The sticky sidebar -->
+    <div class="sidebar" [ngClass]="{'open': isSliderOpen}">
+        <span class="menu_cls">આધ્યાત્મિક માર્ગ</span>
+      <button class="close-btn" (click)="toggleSlider()">
+       <span>x</span> </button>
+      <ul class="sidebar-content" >
+        <li [routerLinkActive]="['active-parent']"><a routerLink="/chalisha" routerLinkActive="active">હનુમાન ચાલીશા</a></li>
+        <li [routerLinkActive]="['active-parent']"><a routerLink="/skti" routerLinkActive="active">જય આધ્યાશક્તિ આરતી</a></li>
+      </ul>
+    </div>
+  </div>
+  

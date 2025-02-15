@@ -1,1 +1,5 @@
+<button class="toggle_btn" (click)="toggleTheme()">
+    <i class="fas" [ngClass]="isDarkMode ? 'fa-sun' : 'fa-moon'"></i>
+  </button>
 <router-outlet></router-outlet>
+<app-slider></app-slider>

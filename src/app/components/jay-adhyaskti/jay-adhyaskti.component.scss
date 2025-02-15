@@ -1,0 +1,43 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: inherit;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 6vw; /* Adjust font size based on screen width */
+    color: inherit;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.aarti-content {
+    font-size: 2.5vw; /* Adjust font size based on screen width */
+    line-height: 1.8;
+    color: inherit;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.aarti-content p {
+    margin-bottom: 15px;
+}
+
+.aarti-content p::after {
+    content: "";
+    display: block;
+    margin-top: 10px;
+}
+
+  
